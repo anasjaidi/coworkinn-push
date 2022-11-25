@@ -1,0 +1,20 @@
+.first-gal
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  @apply grid grid-cols-1 gap-0 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 px-2
+  div
+    @apply flex-col
+    img
+      transition: all .2s ease-in-out
+      &:hover
+        transform: scale(0.95)
+    .link
+      @apply text-right py-4 font-semibold px-2
+      &:hover
+        i
+          transform: translateX(8px)
+      a
+        i
+          transition: all .2s ease-in-out
+          @apply inline-block ml-2 text-[23px]
+.first-element-gallery
+  @apply block

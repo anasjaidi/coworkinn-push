@@ -1,0 +1,101 @@
+.menu-page.active
+  background: black !important
+  @apply  text-white lg:top-0 left-0 w-screen  min-h-screen  z-[1000000000000000] top-[78px] overflow-scroll 
+  
+.menu-page.active .menu-wrapper
+  width: inherit !important 
+  @apply lg:grid lg:grid-cols-4
+
+
+
+
+.menu-page.active .menu 
+  @apply flex flex-col justify-between lg:min-h-screen lg:py-12 px-4 lg:px-0 pb-12 lg:pb-0
+  .menu-button
+    @apply border w-fit py-3 px-4 rounded-md cursor-pointer hidden lg:block
+    font-family: 'Rubik'
+    font-weight: 500
+    font-size: 18px
+    line-height: 18px
+    i
+        @apply mr-2
+  ul
+    @apply lg:mt-16 mt-8 text-[16px] lg:text-[20px]
+    li
+      @apply mb-1
+      font-family: 'Open Sans'
+      font-style: normal
+      font-weight: 700
+      line-height: 50px
+  .menu-footer
+    @apply hidden lg:block
+
+
+
+
+.menu-page.active .spaces
+  @apply flex flex-col justify-between lg:min-h-screen lg:py-12 lg:px-24 py-16 mt-16 lg:mt-0 px-4 
+  position: relative
+  grid-column: span 2
+  &::after
+    content: ''
+    position: absolute
+    background: #b6b3b3c5
+    @apply lg:h-[100%] top-[0] left-[0px] lg:w-[1px] h-[.5px] w-full
+  &::before
+    content: ''
+    position: absolute
+    background: #b6b3b3c5
+    @apply lg:h-[100%] lg:top-[0px] right-[0px] lg:w-[1px] w-full h-[.5px] bottom-0
+  .spaces-main
+    h3
+      font-family: 'Salome'
+      font-style: normal
+      font-weight: 400
+      font-size: 28px
+      line-height: 44px
+    .spaces-section
+      @apply mt-16
+    .spaces-section div
+      @apply flex items-center gap-4 mb-10
+      h4
+        font-family: 'Salome'
+        font-weight: 400
+        font-size: 17px
+        line-height: 18px
+  .spaces-footer
+    @apply  lg:flex justify-between items-center hidden 
+    p
+      @apply font-light text-sm   mr-12 
+      span
+        @apply block text-xl font-medium
+    .ou
+      @apply border border-black text-[12px] rounded-full py-1 px-2 
+      font-family: 'Open Sans'
+
+  
+  
+.menu-page.active .media
+  @apply flex flex-col py-16 justify-between px-8
+  h2
+    font-family: 'Salome'
+    font-weight: 400
+    font-size: 28px
+    line-height: 28px
+  ul
+    @apply flex gap-4 text-2xl lg:px-8 mt-16 mb-12 lg:mb-0
+
+
+
+
+.menu-page
+  padding-left: 30px
+  padding-right: 30px
+  top: -3000px
+  position: fixed
+  bottom:0
+
+  width: 100vw
+  height: 100vh
+  overflow-y: scroll
+  overflow-x: hidden

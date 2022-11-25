@@ -1,0 +1,100 @@
+
+// LOGO STYLES  
+header nav .logo
+  @apply lg:max-w-[90px]  max-w-[90px] fixed
+  left: 50%
+  transform: translateX(-50%)
+
+// fixed wrapper styles
+header .fixed-header-wrapper
+  @apply w-screen bg-transparent z-[100000000] py-6 fixed top-0 
+  &.scrolled
+    @apply bg-white text-black 
+
+
+// header styles
+header
+  @apply h-32 
+  
+  
+// navbar styles
+header nav
+  @apply px-6   flex items-center justify-between z-10 lg:px-3 relative
+
+
+// LINKS UL STYLES
+header nav ul
+  @apply flex flex-col lg:flex-row lg:items-center  lg:static absolute z-[auto] bg-transparent  w-full left-0 lg:w-auto md:py-0 py-0 lg:pl-0 pl-7 lg:opacity-100 top-[-400px] opacity-0  transition-all ease-in duration-500 left-0
+  &.active
+    @apply opacity-100 top-[60px]  bg-white text-black z-50 
+  &.scrolled
+    @apply bg-white
+  li:first-of-type
+    @apply mx-4 my-6 lg:my-0 border py-2 px-4 rounded-md order-6 lg:order-[-1] text-center
+  li 
+    @apply mx-3 my-6 lg:my-0 text-sm
+  
+
+// nav icons styles
+header nav span[name="menu-icons"]
+  @apply text-3xl cursor-pointer mx-2 lg:hidden block z-10
+#left-arrow
+  display: none
+.none
+  display: none !important
+.line
+  display: inline !important
+
+// root wrapper styles
+.wrapper.active
+  @apply fixed  w-screen z-10 left-0
+  top: 60px
+  height: calc( 100vh - 60px )
+  background: #00000082
+
+// spaces styles
+header  .spaces
+  @apply hidden
+
+header  .spaces.active
+  @apply absolute w-[100%] h-screen top-[33px] lg:top-[60px] left-0 bg-white z-50 p-6 lg:max-w-sm lg:max-h-[420px] block
+  h3
+    font-family: 'Salome'
+    font-style: normal
+    font-weight: 400
+    font-size: 28px
+    line-height: 28px
+    margin-bottom: 28px
+  .spaces-main
+    div
+      @apply flex items-center gap-4 mb-10
+      h4
+        font-family: 'Salome'
+        font-style: normal
+        font-weight: 400
+        font-size: 17px
+        line-height: 18px
+  .spaces-footer
+    @apply mt-52 flex justify-between items-center lg:mt-8
+    p
+      @apply font-light text-sm   mr-12 lg:text-[8px]
+      span
+        @apply block text-xl font-medium lg:text-[12px]
+    .ou
+      @apply border border-black text-[12px] rounded-full py-1 px-2 lg:text-[8px]
+      font-family: 'Open Sans'
+    .primary-button
+      @apply lg:text-[12px]
+
+
+// start nav tail styles
+header .nav-tail
+  @apply flex justify-between items-center
+  p
+    @apply font-light text-[10px] lg:block hidden mr-12
+    span
+      @apply block text-xl font-medium text-sm
+
+.background-black
+  background: black !important
+  color: white !important
