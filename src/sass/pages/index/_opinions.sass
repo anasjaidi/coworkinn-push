@@ -1,0 +1,34 @@
+// start opinions styles
+.opinions
+  @apply py-24 max-w-screen-2xl mx-auto px-4
+  background: #000
+  color: white
+  
+  
+// start opinions child elements
+.opinions .container > div 
+    @apply flex flex-col items-center gap-24 sm:flex-col md:flex-col lg:flex-row xl:flex-row
+    .text
+      @apply max-w-sm
+      line-height: 40px
+      font-size: 24px
+      .person
+        @apply mt-12
+        p:first-child
+          font-family: 'Italianno', cursive
+          color: #C8ACB9
+          font-size: 42px
+        p:last-child
+          font-size: 10px
+
+
+// start second opinion style
+.opinions  .second-opinion
+    @apply   flex-col  sm:flex-col md:flex-col lg:flex-row-reverse xl:flex-row-reverse justify-start
+    img
+      margin-right: 40px
+
+
+// start first opinion style
+.opinions .first-opinion
+      @apply my-24

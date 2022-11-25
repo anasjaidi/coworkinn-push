@@ -1,0 +1,39 @@
+// gallery styles
+.gallery
+  @apply flex py-12 items-stretch gap-20 px-10
+  font-family: 'Rubik', sans-serif
+  overflow-x: auto
+  &::-webkit-scrollbar
+    width: 0px
+
+
+// start first child of gallery styles
+.gallery .first-child
+  align-self: center
+
+
+// start info element styles
+.gallery .info
+  h3
+    @apply font-medium mt-4 max-w-[70%]
+  p
+    margin-top: 25px
+    opacity: 0.5
+    font-size: 13px
+
+.gallery .info #gallery-title
+  font-family: salome
+  &::first-letter
+    @apply ml-4
+  @apply text-2xl mt-5 font-semibold
+  span
+    @apply block text-[#F69606] text-4xl
+
+// start gallery childs styles
+.gallery div
+  width: 228px
+  position: relative
+  hr
+    position: absolute
+    bottom: -20px
+    width: 100%
