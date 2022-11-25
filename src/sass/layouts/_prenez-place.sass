@@ -1,0 +1,36 @@
+.prenez-place
+  min-height: 320px
+  position: relative
+  background-image: url(/imgs/prenez-place.png) /*Put your image url*/
+  &::before
+    content: ""
+    position: absolute
+    background: #000
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 2
+    background-size: cover
+    background-position: center
+    opacity: 0.2 /*Value from 0.0 to 1.0*/
+    @apply rounded-2xl
+  @apply flex flex-col items-center justify-center lg:flex-row gap-12 text-white rounded-2xl mx-2
+  h2
+    font-family: salome
+    font-style: normal
+    @apply text-[48px] leading-[4rem] opacity-100 font-[400] z-10
+    span
+      @apply block
+  form
+    @apply flex flex-col z-10 gap-5
+    input
+      background: rgba(182, 179, 179, 0.47)
+      @apply  border-[1.5px] shadow border-white rounded-md px-3 py-2 outline-none min-w-[250px] text-lg
+      &::placeholder
+        color: white
+        opacity: 1
+    button
+      @apply rounded-xl
+      background: #EB760B
+      padding: 10px 40px

@@ -1,0 +1,24 @@
+@use '../utilities/_variables' as *
+  
+  
+footer .container
+  @apply flex flex-col items-center px-8
+  
+footer  .footer-tail
+    @apply flex justify-between my-8 opacity-75 font-light w-full md:w-[500px]
+
+footer .links
+    @apply flex flex-wrap gap-16
+    li
+      @apply mb-3 opacity-75 font-light
+    .first-link
+      @apply inline-block mb-6 text-xl font-medium
+
+footer  h2
+  font-family: $heads-font
+  @apply my-12 text-2xl
+  &::first-letter
+      @apply ml-4
+  span
+      color: $main-color
+      @apply text-4xl block font-medium
