@@ -27,6 +27,11 @@
       rel="stylesheet">
 
 
+    <!-- ITALIANO FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet">
+
+
     <!-- ICONS LIBRARY FONTAWSOME PRO -->
     <link
       rel="stylesheet"
@@ -36,12 +41,431 @@
 
     <!-- ANIMATE ON SCROLL STYLESHEET LIBRARY -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
     <!-- LOCAL STYLESHEET FILE LINK -->
     <link rel="stylesheet" href="css/main.css">
     <title>coworkinn</title>
   </head>
   <body>
+    <div class="menu-page">
+      <div class="container">
+        <div class="menu-wrapper">
+          <div class="menu">
+            <div class="menu-main" onclick="returnBack()">
+              <div class="menu-button" onclick="menuPage()">
+                <i class="fa-solid fa-xmark"></i>Menu
+              </div>
+              <ul>
+                <li>Tarifs</li>
+                <li>Mission</li>
+                <li>
+                  Salles de réunion
+                </li>
+                <li>
+                  Nous contacter
+                </li>
+                <li>
+                  Foire aux questions
+                </li>
+              </ul>
+            </div>
+            <div class="menu-footer">
+              Copyright 2022
+            </div>
+          </div>
+          <div class="spaces">
+            <div class="spaces-main">
+              <h3 class="spaces-title">Nos espaces </h3>
+              <div class="spaces-section">
+                <div class="bureaux-privatifs">
+                  <img src="/imgs/nav-spaces1.png" alt="">
+                  <h4>Bureaux privatifs </h4>
+                </div>
+                <div class="Open-space">
+                  <img src="/imgs/nav-spaces2.png" alt="">
+                  <h4>Open space</h4>
+                </div>
+              </div>
+            </div>
+            <div class="spaces-footer">
+              <a href="" class="primary-button">Je réserve</a>
+              <span class="ou">OU</span>
+              <p>
+                Appelez-nous !
+                <span>06 10 11 88 02</span>
+              </p>
+            </div>
+          </div>
+          <div class="media">
+            <h2>Nos médias</h2>
+            <ul>
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-brands fa-youtube"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper"></div>
+    <header>
+      <div class="fixed-header-wrapper">
+        <div class="container">
+          <div class="nav-parent relative">
+            <nav>
+              <ul class="">
+                <li onclick="menuPage()">Menu</li>
+                <li onclick="spaces()">Espaces <i class="fa-regular
+                    fa-caret-down"></i></li>
+                <li><a href="salles.html">Salles de réunions</a></li>
+                <li><a href="tarif.html">Tarifs</a></li>
+              </ul>
+              <span name="menu-icons">
+                <i class="fa-regular fa-bars" id="menu" onclick="Menu(this)"></i>
+                <i class="fa-sharp fa-solid fa-arrow-left" id="left-arrow"
+                  onclick="Left()"></i>
+              </span>
+              <div class="logo">
+                <img src="/imgs/logo.png" alt="">
+              </div>
+              <div class="nav-tail">
+                <p>
+                  Appelez-nous !
+                  <span>06 10 11 88 02</span>
+                </p>
+                <a class="primary-button" href="reserve.html">Je réserve</a>
+              </div>
+            </nav>
+            <div class="spaces">
+              <h3 class="spaces-title">Nos espaces </h3>
+              <div class="spaces-main">
+                <div class="bureaux-privatifs">
+                  <img src="/imgs/nav-spaces1.png" alt="">
+                  <h4>Bureaux privatifs </h4>
+                </div>
+                <div class="Open-space">
+                  <img src="/imgs/nav-spaces2.png" alt="">
+                  <h4>Open space</h4>
+                </div>
+              </div>
+              <div class="spaces-footer">
+                <a href="" class="primary-button">Je réserve</a>
+                <span class="ou">OU</span>
+                <p>
+                  Appelez-nous !
+                  <span>06 10 11 88 02</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
 
+        <!-- start desktops section -->
+        <section class="desktops">
+          <div class="desktop">
+            <img src="./imgs/bur.png" alt="" />
+            <div class="link">
+              <a href="#">Bureaux privatifs
+                <i class="fa-regular fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="desktop">
+            <img src="imgs/spaces.png" alt=""/>
+            <div class="link">
+              <a href="#">Open Space
+                <i class="fa-regular fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- end desktops section -->
+
+        <!-- start gallary section -->
+        <section class="gallery">
+          <div class="first-child">
+            <div class="info">
+              <h3 id="gallery-title">
+                Votre <span class="gallery-title-marked">Coworkinn</span>
+              </h3>
+              <p>
+                Que vous soyez une start-up en développement ou indépendant(e)
+                en freelance, nous avons le bureau qu’il vous faut !
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="img"><img src="imgs/fourth-1.png" alt=""
+                data-aos="zoom-out"/></div>
+            <div class="info">
+              <h3>Des bureaux fermés privatifs</h3>
+              <p>
+                Bénéficiez de bureaux privatifs, meublés et décorés avec goût.
+                Mais n’oubliez pas d’y apporter votre touche personnelle !
+              </p>
+            </div>
+            <hr>
+          </div>
+          <div>
+            <div class="img"><img src="imgs/fourth-2.png" alt=""
+                data-aos="zoom-out"/></div>
+            <div class="info">
+              <h3>Des espaces de travail ouverts</h3>
+              <p>
+                Pour les indépendants qui aiment travailler en collectivité,
+                prenez possession de nos bureaux dédiés en open space.
+              </p>
+            </div>
+            <hr>
+          </div>
+          <div>
+            <div class="img"><img src="imgs/fourth-3.png" alt=""
+                data-aos="zoom-out"/></div>
+            <div class="info">
+              <h3>Des lieux de vie et de partage</h3>
+              <p>
+                Profitez de nos salons, cuisines et de tous nos espaces communs
+                pour vivre, partager et prendre du temps pour vous.
+              </p>
+            </div>
+            <hr>
+          </div>
+          <div>
+            <div class="img"><img src="imgs/fourth-3.png" alt=""
+                data-aos="zoom-out"/></div>
+            <div class="info">
+              <h3>Ouvert 7j/7 et 24h/24</h3>
+              <p>
+                Vous êtes membre du Studio ? Alors il est à vous ! Profitez de
+                votre bureau tous les jours de la semaine, à n’importe quelle
+                heure.
+              </p>
+            </div>
+            <hr>
+          </div>
+          <div class="last-child">
+            <div class="img"><img src="imgs/1.png" alt="" data-aos="zoom-out"/></div>
+            <div class="info">
+              <h3>L’inspiration comme moteur
+              </h3>
+              <p>
+                Depuis plusieurs années, nous sommes convaincus qu’un lieu
+                inspirant pousse à la créativité, à la motivation, aux échanges,
+                et est un vrai booster pour votre épanouissement professionnel.
+              </p>
+            </div>
+            <hr>
+          </div>
+        </section>
+        <!-- end gallary section -->
+      </div>
+      <!-- start opinions section -->
+      <section class="opinions">
+        <div class="container">
+          <div class="first-opinion">
+            <img src="/imgs/third-1.png" alt="" data-aos="fade-right"/>
+            <div class="text">
+              <p>
+                « Moi quand je viens au Studio, j’ai véritablement l’impression
+                d’être chez moi ! C’est une extension de mon appart, mais avec
+                des
+                gens »
+                <div class="person">
+                  <p>Xavier Leboulanger</p>
+                  <p>Consultant en communication</p>
+                </div>
+              </p>
+            </div>
+          </div>
+          <div class="second-opinion">
+            <img src="/imgs/third-2.png" alt="" data-aos="fade-left"/>
+            <div class="text">
+              <p>
+                « C’était une question de feeling ! Il y a un effet Whaou quand
+                tu
+                viens ici, le lieu est très agréable et hyper cosy »
+                <div class="person">
+                  <p>Julien Hesry </p>
+                  <p>Ingénieur d'Affaires </p>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end opinions section -->
+
+      <div class="container">
+        <!-- start mission section  -->
+        <section class="mission-section">
+          <div class="title">
+            <p>Notre
+              <span>Mission</span>
+            </p>
+          </div>
+          <div class="content">
+            <div class="img"><img src="/imgs/mission.png" alt=""
+                data-aos="fade-up"></div>
+            <div class="text">
+              <div class="text-title">
+                <h3>Bien plus qu'un coworking !</h3>
+              </div>
+              <p><span class="inline-block mb-12">
+                  Dans nos espaces de travail, vous trouverez tout ce dont vous
+                  avez
+                  besoin pour mener à bien votre activité... mais pas que.
+                </span>
+
+                <span>Le Studio, c’est aussi une communauté de personnes aux
+                  valeurs
+                  communes : bienveillance, partage, écoute, et l’envie de
+                  s’accomplir
+                  professionnellement tout en gardant la notion de plaisir.</span>
+                <span>Vivez l’expérience du Studio avec nous !</span>
+              </p>
+              <a href="#" class="primary-button">En savoir plus </a>
+            </div>
+          </div>
+          <hr class="mt-24">
+        </section>
+        <!-- end mission section  -->
+
+        <!-- start gallary section -->
+        <section class="gallery">
+          <div class="first-child">
+            <div class="info">
+              <h3 id="gallery-title">
+                Le <span class="gallery-title-marked">Covid-19</span>
+              </h3>
+              <p>
+                Suite à la crise sanitaire du COVID-19 qui a touché le monde
+                entier,
+                nous avons pris plusieurs mesures pour nos membres actuels.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="img"><img src="imgs/fourth-1.png" alt=""
+                data-aos="zoom-out"/></div>
+            <div class="info">
+              <h3>Des Bureaux Distancés de 1m50</h3>
+              <p>
+                Les espaces ont été repensés pour que chaque bureau puisse être
+                à bonne
+                distance les uns des autres.
+              </p>
+            </div>
+            <hr>
+          </div>
+          <div>
+            <div class="img"><img src="imgs/fourth-2.png" alt=""
+                data-aos="zoom-out"/></div>
+            <div class="info">
+              <h3>Des Gels Hydroalcooliques</h3>
+              <p>
+                Nous avons mis à disposition dans chaque espace et pour chaque
+                membre,
+                du gel hydroalcoolique.
+              </p>
+            </div>
+            <hr>
+          </div>
+          <div>
+            <div class="img"><img src="imgs/fourth-3.png" alt=""
+                data-aos="zoom-out"/></div>
+            <div class="info">
+              <h3>Des Toilettes Japonaises</h3>
+              <p>
+                La crise sanitaire nous a obligé à repenser notre façon de vivre
+                et nos
+                équipements. Très influencés par la culture japonaise, il nous
+                paraissait indispensable de mettre en place ces toilettes à
+                l’hygiène
+                impeccable.
+              </p>
+            </div>
+            <hr>
+          </div>
+          <div class="last-child">
+            <div class="img"><img src="imgs/1.png" alt="" data-aos="zoom-out"/></div>
+            <div class="info">
+              <h3>Des Bureaux Privés
+              </h3>
+              <p>
+                Les deux espaces du Studio possèdent des bureaux privés ! Ce qui
+                vous
+                permet aisément de profiter du coworking et des espaces communs
+                mais
+                d’avoir également votre indépendance.
+
+              </p>
+            </div>
+            <hr>
+          </div>
+        </section>
+        <!-- end gallary section -->
+
+
+        <!-- start prenez place section  -->
+        <div class="prenez-place">
+          <h2>Prenez <span>Place!</span></h2>
+          <form action="">
+            <input type="email" name="" id="" placeholder=" @ Votre adresse
+              e-mail">
+            <button>Je me renseigne !</button>
+          </form>
+        </div>
+        <!-- end prenez place section  -->
+      </div>
+    </main>
+    <!-- end main -->
+    <!-- start footer -->
+    <footer>
+      <div class="container">
+        <h2> Le
+          <span>Coworkinn</span> </h2>
+        <div class="links">
+          <ul>
+            <li class="first-link">Découvrir</li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="./tarif.html">Tarifs</a></li>
+            <li><a href="./mission.html">Mission</a></li>
+            <li><a href="salles.html">Salles de réunion
+              </a></li>
+            <li><a href="contact.html">Nous contacter
+              </a></li>
+            <li><a href="contact.html">Foire aux questions </a></li>
+          </ul>
+          <ul>
+            <li class="first-link">Médias</li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Linkedin</a></li>
+          </ul>
+          <ul>
+            <li class="first-link">Contact</li>
+            <li><a href="">06 31 29 32 38</a></li>
+            <li><a href="/contact.html">@ Nous contacter -></a></li>
+          </ul>
+        </div>
+        <div class="footer-tail">
+          <p>Coworkinn</p>
+          <p>© copyright 2022</p>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- menu script -->
+    <script src="js/menu.js" defer></script>
+    <script src="js/spaces-menu.js" defer></script>
+    <!-- main scripts -->
+    <script src="js/main.js"></script>
+    <!-- gallary script -->
+    <script src="js/gallery.js"></script>
   </body>
 </html>
