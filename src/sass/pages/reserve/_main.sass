@@ -1,0 +1,61 @@
+@use '../../utilities/_variables' as *
+  
+
+// start main of reserve page styles   
+main.reserve
+  @apply flex  items-stretch lg:grid lg:grid-cols-3
+  &::-webkit-scrollbar
+    width: 0px
+  overflow-x: auto
+  
+  
+
+
+
+// start reserve page childs styles  
+main.reserve div.item
+  @apply flex flex-col gap-8 items-center px-4 py-24 min-w-[380px]
+  &:first-of-type
+    background: #FEE3F0
+  &:nth-of-type(2)
+    background: #FDCBE4
+  &:last-of-type
+    background: #CCCCF9
+
+
+
+// start reserve childs title styles       
+main.reserve div.item .title
+  h2
+    font-family: $heads-font
+    font-size: 28px
+  h3
+    font-size: 12px
+    font-weight: 400
+    font-family: 'Open Sans'
+
+
+
+// start colse page styles  
+main.reserve i.back
+  width: auto !important
+  @apply fixed mt-4 left-6 cursor-pointer px-4 py-2 border-[.55px] border-black rounded-md text-[14px] hover:translate-x-0
+
+    
+
+// start childs icons styles
+main.reseve  i
+    @apply text-2xl duration-300 p-4
+    &:hover
+      @apply translate-x-3
+
+
+// start childs text style  
+main.reserve div.item .text
+  font-family: 'Open Sans'
+  font-style: normal
+  font-weight: 300
+  font-size: 13px
+  line-height: 18px
+  text-align: center
+  @apply max-w-xs text-center
