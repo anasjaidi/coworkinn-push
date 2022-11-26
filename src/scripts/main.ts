@@ -1,6 +1,6 @@
 function activate(el: string | HTMLElement) {
 	if (typeof el == 'string')
-     el = <HTMLElement>document.querySelector(el)
+		 el = <HTMLElement>document.querySelector(el)
 	el.classList.toggle("active");
 }
 
