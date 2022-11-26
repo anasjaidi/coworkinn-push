@@ -4,3 +4,8 @@ function activate(el: string | HTMLElement) {
      el = <HTMLElement>document.querySelector(el)
 	el.classList.toggle("active");
 }
+
+
+function returnBack(e: HTMLElement) {
+	window.history.back();
+}
