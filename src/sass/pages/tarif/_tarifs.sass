@@ -1,0 +1,78 @@
+// start tarifs styles 
+main .tarifs
+  @apply flex gap-24 overflow-x-auto px-8
+  &::-webkit-scrollbar
+    width: 0px
+  hr
+    @apply mb-12
+
+// start tarifs child styles
+main .tarifs .tarif
+  @apply  flex flex-col gap-4 min-w-[210px]
+
+main .tarifs .tarif .tarif-type
+  h3
+    font-family: 'Salome'
+    font-style: normal
+    font-weight: 400
+    font-size: 20px
+    line-height: 20px
+    margin-bottom: 15px
+  p
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 300
+    font-size: 17px
+    line-height: 23px
+
+
+main .tarifs .tarif .tarif-features 
+  ul
+    list-style: disc
+    list-style-position: inside
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 300
+    font-size: 17px
+    line-height: 23px
+    li
+      margin-bottom: 2px
+
+
+main .tarifs .tarif .tarif-price
+  p:first-of-type
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 300
+    font-size: 17px
+    line-height: 23px
+  h3
+    font-family: 'Salome'
+    font-style: normal
+    font-weight: 400
+    font-size: 38px
+    line-height: 20px
+    margin: 16px 0 22px 
+    @apply flex items-center gap-2
+    span
+      font-size: 20px
+  p:last-of-type
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 23px
+
+
+main .tarifs .tarif .tarif-action 
+  @apply my-8
+  a
+    width: 173px
+    height: 45px
+    padding: 10px 40px
+    left: 22px
+    top: 289px
+    color: white
+    font-size: 20px
+    background: #EB760B
+    border-radius: 12px
