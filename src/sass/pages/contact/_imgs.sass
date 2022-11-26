@@ -1,0 +1,17 @@
+// start images contact styles
+
+main.contact .imgs
+  @apply max-w-sm hidden lg:grid  lg:grid-cols-2 lg:grid-rows-2 lg:gap-4
+
+
+// start each image style
+main.contact .imgs  img
+  @apply rounded-md
+  &:first-of-type
+    @apply col-start-1 h-[90%] w-[100%]
+    align-self: end
+  &:nth-of-type(2)
+    @apply   h-[80%] w-[100%]
+    align-self: end
+  &:last-of-type
+    @apply col-span-2 row-start-2 row-end-2 h-40 w-[85%]

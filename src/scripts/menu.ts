@@ -24,4 +24,5 @@ window.addEventListener("scroll", () => {
 
 	if (!head?.classList.contains("background-black"))
 		head?.classList.toggle("background-white", window.scrollY > 0);
+
 });

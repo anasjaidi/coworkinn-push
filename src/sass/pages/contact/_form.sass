@@ -1,0 +1,32 @@
+// start form styles
+main.contact form
+    @apply grid gap-6 justify-center grid-cols-2 py-16 mx-4 lg:mx-0 
+    input.field, textarea
+      @apply bg-transparent border-[1px]  rounded-xl px-4 py-2 max-w-md outline-none col-span-2 min-w-[360px] lg:min-w-full
+      border-color:  rgba(182, 179, 179, 0.84)
+      &.error
+        @apply border-red-500
+    input#f-name, input#l-name
+      @apply col-span-2 lg:col-span-1
+    button
+      @apply col-span-2
+    h3
+      font-family: 'Rubik'
+      font-style: normal
+      font-weight: 400
+      font-size: 14px
+      line-height: 17px
+      @apply col-span-2
+    .radio-input
+      @apply col-span-2 flex gap-8
+    .radio-input div
+      @apply flex items-center gap-4
+    input[name="contact-prefernce"]
+      @apply bg-transparent w-8
+    label
+      font-family: 'Rubik'
+      display: inline-block
+      font-style: normal
+      font-weight: 400
+      font-size: 14px
+      line-height: 17px
