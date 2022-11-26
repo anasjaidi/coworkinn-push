@@ -1,0 +1,27 @@
+.savoir-faire
+  @apply my-24 px-8
+  h2
+    font-family: salome
+    font-weight: 400
+    font-size: 20px
+    &::first-letter
+      @apply ml-8
+    span
+      font-size: 40px
+      color: #EB760B
+      @apply block 
+      line-height: 35px
+  .content
+    @apply lg:grid lg:grid-cols-2 lg:gap-36
+    p
+      @apply max-w-xl col-span-1 flex flex-col gap-6
+      font-family: 'Open Sans'
+      font-style: normal
+      font-weight: 300
+      font-size: 18px
+      line-height: 25px
+      padding: 40px 0
+      span.last
+        @apply font-semibold inline-block mt-4 text-[17px]
+    img
+      @apply col-start-2 max-w-sm rounded-xl hidden lg:block
