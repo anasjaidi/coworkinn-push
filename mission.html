@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SALOME FONT -->
+    <link
+      href="//db.onlinewebfonts.com/c/1e20e698946e398f2ad70318ce64c215?family=Salome"
+      rel="stylesheet" type="text/css"/>
+
+    <!-- RUBIK FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+    <!-- OPEN SANS FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+    <!-- GRIFFY FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Griffy&display=swap"
+      rel="stylesheet">
+
+
+    <!-- ITALIANO FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet">
+
+
+    <!-- ICONS LIBRARY FONTAWSOME PRO -->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css"
+      />
+
+
+    <!-- ANIMATE ON SCROLL STYLESHEET LIBRARY -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- LOCAL STYLESHEET FILE LINK -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>coworkinn</title>
+  </head>
+  <body>
+    <div class="menu-page">
+      <div class="container">
+        <div class="menu-wrapper">
+          <div class="menu">
+            <div class="menu-main" onclick="returnBack()">
+              <div class="menu-button" onclick="menuPage()">
+                <i class="fa-solid fa-xmark"></i>Menu
+              </div>
+              <ul>
+                <li>Tarifs</li>
+                <li>Mission</li>
+                <li>
+                  Salles de réunion
+                </li>
+                <li>
+                  Nous contacter
+                </li>
+                <li>
+                  Foire aux questions
+                </li>
+              </ul>
+            </div>
+            <div class="menu-footer">
+              Copyright 2022
+            </div>
+          </div>
+          <div class="spaces">
+            <div class="spaces-main">
+              <h3 class="spaces-title">Nos espaces </h3>
+              <div class="spaces-section">
+                <div class="bureaux-privatifs">
+                  <img src="/imgs/nav-spaces1.png" alt="">
+                  <h4>Bureaux privatifs </h4>
+                </div>
+                <div class="Open-space">
+                  <img src="/imgs/nav-spaces2.png" alt="">
+                  <h4>Open space</h4>
+                </div>
+              </div>
+            </div>
+            <div class="spaces-footer">
+              <a href="" class="primary-button">Je réserve</a>
+              <span class="ou">OU</span>
+              <p>
+                Appelez-nous !
+                <span>06 10 11 88 02</span>
+              </p>
+            </div>
+          </div>
+          <div class="media">
+            <h2>Nos médias</h2>
+            <ul>
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-brands fa-youtube"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper"></div>
+    <header>
+      <div class="fixed-header-wrapper">
+        <div class="container">
+          <div class="nav-parent relative">
+            <nav>
+              <ul class="">
+                <li onclick="menuPage()">Menu</li>
+                <li onclick="spaces()">Espaces <i class="fa-regular
+                    fa-caret-down"></i></li>
+                <li><a href="salles.html">Salles de réunions</a></li>
+                <li><a href="tarif.html">Tarifs</a></li>
+              </ul>
+              <span name="menu-icons">
+                <i class="fa-regular fa-bars" id="menu" onclick="Menu(this)"></i>
+                <i class="fa-sharp fa-solid fa-arrow-left" id="left-arrow"
+                  onclick="Left()"></i>
+              </span>
+              <div class="logo">
+                <img src="/imgs/logo.png" alt="">
+              </div>
+              <div class="nav-tail">
+                <p>
+                  Appelez-nous !
+                  <span>06 10 11 88 02</span>
+                </p>
+                <a class="primary-button" href="reserve.html">Je réserve</a>
+              </div>
+            </nav>
+            <div class="spaces">
+              <h3 class="spaces-title">Nos espaces </h3>
+              <div class="spaces-main">
+                <div class="bureaux-privatifs">
+                  <img src="/imgs/nav-spaces1.png" alt="">
+                  <h4>Bureaux privatifs </h4>
+                </div>
+                <div class="Open-space">
+                  <img src="/imgs/nav-spaces2.png" alt="">
+                  <h4>Open space</h4>
+                </div>
+              </div>
+              <div class="spaces-footer">
+                <a href="" class="primary-button">Je réserve</a>
+                <span class="ou">OU</span>
+                <p>
+                  Appelez-nous !
+                  <span>06 10 11 88 02</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <!-- start mission section  -->
+        <section class="mission-page">
+          <h2>Notre <span>Mission</span></h2>
+          <p>
+            Dans nos espaces de travail, vous trouverez tout ce dont vous avez
+            besoin pour mener à bien votre activité... mais pas que. Le Studio,
+            c’est aussi une communauté de personnes aux valeurs communes :
+            bienveillance, partage, écoute, et l’envie de s’accomplir
+            professionnellement tout en gardant la notion de plaisir.
+
+            <span>Vivez l’expérience du Studio avec nous !</span>
+          </p>
+          <img src="/imgs/mission-page1.jpeg" alt="" />
+        </section>
+        <!-- end mission section  -->
+        <section class="savoir-faire">
+          <h2>Notre <span>Savoir-faire</span></h2>
+          <div class="content">
+            <p>
+              <span>Le Studio est né d’un besoin de travailler autrement. En
+                tant
+                qu’agence web, il était important pour nous de retrouver à Rouen
+                les espaces de travail que nous avions fréquenté au cours de nos
+                différents voyages d’affaires. En juin 2016, nous ouvrions les
+                portes du Studio Pasteur et avons fait évoluer l’espace grâce à
+                tous les membres qui nous ont fait confiance.</span>
+              <span>
+                Aujourd’hui, près de 4 ans plus tard, nous sommes plus que
+                jamais convaincus que l’environnement de travail fait partie du
+                bien-être professionnel et donc pousse à de meilleurs résultats
+                !
+              </span>
+              <span>
+                C’est pourquoi nous avons décidé d’y consacrer encore plus de
+                notre énergie et d’adapter nos espaces à vos besoins.
+              </span>
+              <span>
+                Dans nos espaces de travail, vous trouverez tout ce dont vous
+                avez besoin pour mener à bien votre activité... mais pas que. Le
+                Studio, c’est aussi une communauté de personnes aux valeurs
+                communes : bienveillance, partage, écoute, et l’envie de
+                s’accomplir professionnellement tout en gardant la notion de
+                plaisir.
+              </span>
+              <span class="last">Vivez l’expérience du Studio avec nous !</span>
+            </p>
+            <img src="/imgs/savoir.jpeg" alt="" />
+          </div>
+          <a href="" class="primary-button">Nous contacter</a>
+        </section>
+        <!-- start prenez place -->
+        <div class="prenez-place">
+          <h2>Prenez <span>Place!</span></h2>
+          <form action="">
+            <input type="email" name="" id=""
+              placeholder=" @ Votre adresse e-mail">
+            <button>Je me renseigne !</button>
+          </form>
+        </div>
+        <!-- end prenez place -->
+      </div>
+    </main>
+    <!-- start footer -->
+    <footer>
+      <div class="container">
+        <h2> Le
+          <span>Coworkinn</span> </h2>
+        <div class="links">
+          <ul>
+            <li class="first-link">Découvrir</li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="./tarif.html">Tarifs</a></li>
+            <li><a href="./mission.html">Mission</a></li>
+            <li><a href="salles.html">Salles de réunion
+              </a></li>
+            <li><a href="contact.html">Nous contacter
+              </a></li>
+            <li><a href="contact.html">Foire aux questions </a></li>
+          </ul>
+          <ul>
+            <li class="first-link">Médias</li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Linkedin</a></li>
+          </ul>
+          <ul>
+            <li class="first-link">Contact</li>
+            <li><a href="">06 31 29 32 38</a></li>
+            <li><a href="/contact.html">@ Nous contacter -></a></li>
+          </ul>
+        </div>
+        <div class="footer-tail">
+          <p>Coworkinn</p>
+          <p>© copyright 2022</p>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- menu script -->
+    <script src="js/menu.js" defer></script>
+    <script src="js/spaces-menu.js" defer></script>
+    <!-- main scripts -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
