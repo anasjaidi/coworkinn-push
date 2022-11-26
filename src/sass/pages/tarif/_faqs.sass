@@ -1,0 +1,53 @@
+// start fqas style
+.faqs
+  @apply flex  flex-col max-w-lg items-center mx-auto mb-48 px-3
+  
+  
+// start fqas title style
+.faqs  .title
+  font-family: 'Salome'
+  font-style: normal
+  font-weight: 400
+  font-size: 44px
+  line-height: 64px
+  text-align: center
+  margin-bottom: 68px
+  @apply lg:text-[64px]
+
+
+
+// start faqs childs styles  
+.faqs  .faq
+    @apply mb-6 mx-4
+
+// start faq question style    
+.faq .question
+  @apply flex justify-between 
+  transition: all .5s ease
+  h3
+    // font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 700
+    font-size: 18px
+    line-height: 25px
+    @apply max-w-[85%]
+
+// start faq response styles
+.response
+    @apply mb-6 duration-300 max-h-0 overflow-hidden
+    transition: all .5s ease
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 25px
+    span
+      @apply block text-[18px] font-bold
+
+
+// start active faq style      
+.faq.active 
+  .response
+    @apply max-h-[600px]
+  .question
+    @apply mb-6
